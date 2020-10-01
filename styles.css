@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  height: auto;
+  padding: 10px 0px;
+  margin-left: 4.5vw;
+  align-items: center;
+  border-bottom: 2px solid black;
+  width: 95%;
+  justify-content: space-between;
+}
+.nav-links,
+.title-container,
+.title {
+  display: flex;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  margin: 5px 5px 5px 20px;
+  align-items: center;
+}
+
+.title-container {
+  position: relative;
+}
+.subtitle {
+  position: absolute;
+  left: 95px;
+  top: 75%;
+  align-items: center;
+  font-weight: 600;
+  flex: 1;
+}
+
+nav {
+  width: 100%;
+}
+.nav-links {
+  flex: 1;
+  justify-content: flex-end;
+  list-style: none;
+}
+.nav-link {
+  font-size: 19px;
+  text-decoration: none;
+  margin-left: 5vw;
+  border-bottom: solid transparent;
+}
+
+.nav-link:hover {
+  color: maroon;
+  border-image: linear-gradient(to right, white 10%, maroon, white 90%);
+  border-image-slice: 1;
+}
+
+.page-head {
+  margin: 30px 4.5vw;
+  font-size: 30px;
+  padding: 0px 0px 7px 0px;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to left, white 68%, lightblue 82%);
+  border-image-slice: 1;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 4.1vw;
+}
+.column {
+  max-width: 50%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  object-fit: cover;
+  height: 33%;
+}
+
+
+
+.hotels, .restaurants {
+  margin-top: 4vh;
+  margin-left: 2.7rem;
+}
+
+.hotels h2, .restaurants h2 {
+  margin-left: 10px;
+} 
+
+.hotels div a img, .restaurants div a img {
+  float: left;
+  object-fit: cover;
+  width: 100%;
+  margin: 10px 0px;
+  opacity: 0.7;
+  border: 10px transparent solid;
+  transition: 0.7s ease;
+}
+
+.hotels div a img:hover, .restaurants div a img:hover {
+  opacity: 1;
+  border: 1px gray solid;
+  
+}
+
+.hotels div img:hover ~ h2 {
+  background-color: green;
+}
+
+footer h4 {
+  margin-left: 4.4vw;
+  padding: 20px 0;
+  color: black;
+  
+}
+
+footer{
+  width: 11rem;
+}
+
+footer a {
+  text-decoration: none;
+  
+}
+
+@media screen and (max-width: 780px) {
+  .column {
+    max-width: 100%;
+  }
+  header {
+    height: auto;
+    display: block;
+    font-size: 12px;
+    width: 85%;
+  }
+
+  .nav-links {
+    padding-top: 10px;
+    justify-content: flex-start;
+  }
+  .title-container {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .nav-links {
+    display: inline;
+  }
+  .nav-link {
+    margin-left: 0px;
+  }
+  nav {
+    padding: 10px 0;
+  }
+
+  .row {
+    margin-top: 10px;
+  }
+}
