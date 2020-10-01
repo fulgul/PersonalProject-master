@@ -5,7 +5,7 @@
   margin: 0px;
   padding: 0px;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -59,7 +59,7 @@ nav {
 .nav-link {
   font-size: 19px;
   text-decoration: none;
-  margin-left: 5vw;
+  margin-right: 5vw;
   border-bottom: solid transparent;
 }
 
@@ -95,18 +95,19 @@ nav {
   height: 33%;
 }
 
-
-
-.hotels, .restaurants {
+.hotels,
+.restaurants {
   margin-top: 4vh;
   margin-left: 2.7rem;
 }
 
-.hotels h2, .restaurants h2 {
+.hotels h2,
+.restaurants h2 {
   margin-left: 10px;
-} 
+}
 
-.hotels div a img, .restaurants div a img {
+.hotels div a img,
+.restaurants div a img {
   float: left;
   object-fit: cover;
   width: 100%;
@@ -116,10 +117,10 @@ nav {
   transition: 0.7s ease;
 }
 
-.hotels div a img:hover, .restaurants div a img:hover {
+.hotels div a img:hover,
+.restaurants div a img:hover {
   opacity: 1;
   border: 1px gray solid;
-  
 }
 
 .hotels div img:hover ~ h2 {
@@ -130,16 +131,14 @@ footer h4 {
   margin-left: 4.4vw;
   padding: 20px 0;
   color: black;
-  
 }
 
-footer{
+footer {
   width: 11rem;
 }
 
 footer a {
   text-decoration: none;
-  
 }
 
 @media screen and (max-width: 780px) {
@@ -167,7 +166,7 @@ footer a {
     display: inline;
   }
   .nav-link {
-    margin-left: 0px;
+    margin-right: 0px;
   }
   nav {
     padding: 10px 0;
