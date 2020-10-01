@@ -123,9 +123,6 @@ nav {
   border: 1px gray solid;
 }
 
-.hotels div img:hover ~ h2 {
-  background-color: green;
-}
 
 footer h4 {
   margin-left: 4.4vw;
